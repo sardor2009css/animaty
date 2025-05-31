@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.box{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 100px;
+    height:100px;
+    background-color: red;
+    position: relative;
+    animation-name: animation ;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: (1.1.1.1);
+    animation-iteration-count: infinite;
+}
+@keyframes animation {
+    0%{
+        left: 0px;
+        top: 0;
+    }
+    50%{
+        background-color: blue;
+        left: 200px;
+        top: 0px;
+     }
+     60%{
+        background-color: brown;
+        left: 200px;
+        top: 200px;
+     }
+     70%{
+        background-color: chartreuse;
+        left: 0;
+        top: 200px;
+     }
+     100%{
+        background-color: yellowgreen;
+        left: 0;
+        top: 0;
+     }
+}
